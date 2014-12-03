@@ -409,7 +409,7 @@ containing a value of this type.
         public static final int powered_by_google_light=0x7f020020;
     }
     public static final class id {
-        public static final int action_settings=0x7f070015;
+        public static final int action_settings=0x7f070016;
         public static final int book_now=0x7f070010;
         public static final int buyButton=0x7f07000a;
         public static final int buy_now=0x7f07000f;
@@ -428,11 +428,13 @@ containing a value of this type.
         public static final int sandbox=0x7f070008;
         public static final int satellite=0x7f070002;
         public static final int selectionDetails=0x7f07000b;
+        public static final int startingPoint=0x7f070015;
         public static final int strict_sandbox=0x7f070009;
         public static final int terrain=0x7f070003;
         public static final int wrap_content=0x7f07000d;
     }
     public static final class integer {
+        public static final int fields_length=0x7f080001;
         public static final int google_play_services_version=0x7f080000;
     }
     public static final class layout {
@@ -548,6 +550,7 @@ containing a value of this type.
         public static final int create_calendar_title=0x7f050004;
         public static final int decline=0x7f050003;
         public static final int hello_world=0x7f050024;
+        public static final int starting_point=0x7f050026;
         public static final int store_picture_message=0x7f050001;
         public static final int store_picture_title=0x7f050000;
         /**  Text on a placeholder buy button when Google Play services is not
