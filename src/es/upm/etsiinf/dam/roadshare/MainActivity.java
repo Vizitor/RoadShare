@@ -46,7 +46,7 @@ public class MainActivity extends Activity {
 		LatLng latlng;
 		Geocoder gc = new Geocoder(this);
 		List<Address> list;
-		Log.d(TAG, "Setlocation  = "+location.toString());
+		Log.d(TAG, "location  = "+location.toString());
 		try {
 			list = gc.getFromLocationName(location.toString(), 1);
 			Address address = list.get(0);
@@ -69,7 +69,7 @@ public class MainActivity extends Activity {
 			@Override
 			public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
 				boolean handled = false;
-				if (actionId == EditorInfo.IME_ACTION_SEND) {
+				if (actionId == EditorInfo.IME_ACTION_DONE) {
 					setLocation(startText.getText());
 					handled = true;
 				}
