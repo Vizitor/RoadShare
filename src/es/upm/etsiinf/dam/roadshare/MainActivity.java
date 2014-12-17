@@ -46,7 +46,7 @@ public class MainActivity extends Activity {
 		LatLng latlng;
 		Geocoder gc = new Geocoder(this);
 		List<Address> list;
-		Log.d(TAG, "location  = "+location.toString());
+		Log.d(TAG, "Setlocation  = "+location.toString());
 		try {
 			list = gc.getFromLocationName(location.toString(), 1);
 			Address address = list.get(0);
@@ -65,6 +65,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		setUpMapIfNeeded();
 		final EditText startText = (EditText) findViewById(R.id.startingPoint);
+		final EditText endText = (EditText) findViewById(R.id.endingPoint);
 		startText.setOnEditorActionListener(new OnEditorActionListener() {
 			@Override
 			public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
@@ -76,7 +77,17 @@ public class MainActivity extends Activity {
 				return handled;
 			}
 		});
-		//startText.setOnEditorActionListener(l);
+		endText.setOnEditorActionListener(new OnEditorActionListener() {
+			@Override
+			public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+				boolean handled = false;
+				if (actionId == EditorInfo.IME_ACTION_DONE) {
+					setLocation(endText.getText());
+					handled = true;
+				}
+				return handled;
+			}
+		});
 
 	}
 

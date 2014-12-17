@@ -409,12 +409,13 @@ containing a value of this type.
         public static final int powered_by_google_light=0x7f020020;
     }
     public static final class id {
-        public static final int action_settings=0x7f070016;
+        public static final int action_settings=0x7f070017;
         public static final int book_now=0x7f070010;
         public static final int buyButton=0x7f07000a;
         public static final int buy_now=0x7f07000f;
         public static final int buy_with_google=0x7f07000e;
         public static final int classic=0x7f070011;
+        public static final int endingPoint=0x7f070016;
         public static final int grayscale=0x7f070012;
         public static final int holo_dark=0x7f070005;
         public static final int holo_light=0x7f070006;
@@ -549,6 +550,7 @@ containing a value of this type.
         public static final int create_calendar_message=0x7f050005;
         public static final int create_calendar_title=0x7f050004;
         public static final int decline=0x7f050003;
+        public static final int ending_point=0x7f050027;
         public static final int hello_world=0x7f050024;
         public static final int starting_point=0x7f050026;
         public static final int store_picture_message=0x7f050001;
