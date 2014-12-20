@@ -400,16 +400,27 @@ containing a value of this type.
         public static final int common_signin_btn_text_normal_light=0x7f020017;
         public static final int common_signin_btn_text_pressed_dark=0x7f020018;
         public static final int common_signin_btn_text_pressed_light=0x7f020019;
-        public static final int ic_launcher=0x7f02001a;
-        public static final int ic_plusone_medium_off_client=0x7f02001b;
-        public static final int ic_plusone_small_off_client=0x7f02001c;
-        public static final int ic_plusone_standard_off_client=0x7f02001d;
-        public static final int ic_plusone_tall_off_client=0x7f02001e;
-        public static final int powered_by_google_dark=0x7f02001f;
-        public static final int powered_by_google_light=0x7f020020;
+        public static final int end_blue=0x7f02001a;
+        public static final int end_green=0x7f02001b;
+        public static final int end_orange=0x7f02001c;
+        public static final int end_purple=0x7f02001d;
+        public static final int end_red=0x7f02001e;
+        public static final int ic_action_search=0x7f02001f;
+        public static final int ic_launcher=0x7f020020;
+        public static final int ic_plusone_medium_off_client=0x7f020021;
+        public static final int ic_plusone_small_off_client=0x7f020022;
+        public static final int ic_plusone_standard_off_client=0x7f020023;
+        public static final int ic_plusone_tall_off_client=0x7f020024;
+        public static final int powered_by_google_dark=0x7f020025;
+        public static final int powered_by_google_light=0x7f020026;
+        public static final int start_blue=0x7f020027;
+        public static final int start_green=0x7f020028;
+        public static final int start_orange=0x7f020029;
+        public static final int start_purple=0x7f02002a;
+        public static final int start_red=0x7f02002b;
     }
     public static final class id {
-        public static final int action_settings=0x7f070017;
+        public static final int action_settings=0x7f070018;
         public static final int book_now=0x7f070010;
         public static final int buyButton=0x7f07000a;
         public static final int buy_now=0x7f07000f;
@@ -422,6 +433,7 @@ containing a value of this type.
         public static final int hybrid=0x7f070004;
         public static final int map=0x7f070014;
         public static final int match_parent=0x7f07000c;
+        public static final int menu_settings=0x7f070017;
         public static final int monochrome=0x7f070013;
         public static final int none=0x7f070000;
         public static final int normal=0x7f070001;
@@ -442,11 +454,12 @@ containing a value of this type.
         public static final int activity_main=0x7f030000;
     }
     public static final class menu {
-        public static final int main=0x7f0a0000;
+        public static final int activity_map=0x7f0a0000;
+        public static final int main=0x7f0a0001;
     }
     public static final class string {
         public static final int accept=0x7f050002;
-        public static final int action_settings=0x7f050025;
+        public static final int action_settings=0x7f050027;
         public static final int app_name=0x7f050023;
         /**   Text for notification shown when the Android Wear apps needs to be updated. Only shown on the wearable. [CHAR LIMIT=NONE] 
          */
@@ -550,11 +563,13 @@ containing a value of this type.
         public static final int create_calendar_message=0x7f050005;
         public static final int create_calendar_title=0x7f050004;
         public static final int decline=0x7f050003;
-        public static final int ending_point=0x7f050027;
+        public static final int ending_point=0x7f050029;
         public static final int hello_world=0x7f050024;
-        public static final int starting_point=0x7f050026;
+        public static final int menu_settings=0x7f050025;
+        public static final int starting_point=0x7f050028;
         public static final int store_picture_message=0x7f050001;
         public static final int store_picture_title=0x7f050000;
+        public static final int title_activity_map=0x7f050026;
         /**  Text on a placeholder buy button when Google Play services is not
          available or up-to-date 
          */
@@ -582,11 +597,11 @@ containing a value of this type.
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f040005;
+        public static final int AppBaseTheme=0x7f040006;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f040006;
+        public static final int AppTheme=0x7f040005;
         public static final int Theme_IAPTheme=0x7f040000;
         public static final int WalletFragmentDefaultButtonTextAppearance=0x7f040003;
         public static final int WalletFragmentDefaultDetailsHeaderTextAppearance=0x7f040002;
