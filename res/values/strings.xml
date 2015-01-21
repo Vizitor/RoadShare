@@ -7,5 +7,9 @@
     <string name="starting_point">Enter your starting point</string>
     <item format="integer" type="integer" name="fields_length">30</item>
     <string name="ending_point">Enter your ending point</string>
+    <string name="save">Save</string>
+    <string name="load">Load</string>
+    <string name="share">Share</string>
+    <string name="delete">Delete</string>
 
 </resources>
