@@ -1,10 +1,12 @@
 package es.upm.etsiinf.dam.roadshare;
+import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
 import br.com.thinkti.android.filechooser.FileChooser;
@@ -24,6 +26,7 @@ import android.graphics.Color;
 import android.location.Address;
 import android.location.Geocoder;
 import android.os.Bundle;
+import android.os.Environment;
 import android.text.Editable;
 import android.text.InputType;
 import android.view.Menu;
@@ -180,11 +183,11 @@ public class MainActivity extends Activity implements RoutingListener {
 							input.setError("Insert title please");
 						}
 						else {
-							String filename = input.getText().toString()+".rds";
-							File file = new File(MyActivity.getFilesDir(),filename );
-							FileOutputStream outputStream;
+							String filename = input.getText().toString()+".txt";
+							File file = new File(Environment.getExternalStorageDirectory().getPath(),filename );
+							OutputStream outputStream = null;
 							try {
-								outputStream = openFileOutput(filename, Context.MODE_PRIVATE);
+								outputStream = new BufferedOutputStream(new FileOutputStream(file));
 								outputStream.write(startText.getText().toString().getBytes());
 								String newLine="\n";
 								outputStream.write(newLine.getBytes());
@@ -210,14 +213,14 @@ public class MainActivity extends Activity implements RoutingListener {
 		if (id == R.id.load) {
 			Intent intent = new Intent(this, FileChooser.class);
 			ArrayList<String> extensions = new ArrayList<String>();
-			extensions.add(".rds");
+			extensions.add(".txt");
 			intent.putStringArrayListExtra("filterFileExtension", extensions);
 			startActivityForResult(intent, 1);	
 		}
 		if (id == R.id.delete) {
 			Intent intent = new Intent(this, FileChooser.class);
 			ArrayList<String> extensions = new ArrayList<String>();
-			extensions.add(".rds");
+			extensions.add(".txt");
 			intent.putStringArrayListExtra("filterFileExtension", extensions);
 			startActivityForResult(intent, 2);
 		}
